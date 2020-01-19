@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NP Project 3 Console</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678068-terminal-512.png"
+    />
+    <style>
+      * {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1rem !important;
+      }
+      body {
+        background-color: #212529;
+      }
+      pre {
+        color: #cccccc;
+      }
+      b {
+        color: #ffffff;
+      }
+      html, body{
+        width: 100%;
+        height: 100%;
+      }
+      #map{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script>
+    var map;
+    function initMap(){
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -25.363, lng: 131.044},
+        zoom: 5,
+      });
+    
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSzCZo_-t4GfM7U7Foj11KI1kuYB46LaI&callback=initMap" async defer></script>
+
+  </head>
+  <body>
+
+      <div id="map"></div>
+
+  </body>
+</html>
+
+<script>document.getElementById('s0').innerHTML += '<b>粗體</b> 換行&NewLine;';</script>
