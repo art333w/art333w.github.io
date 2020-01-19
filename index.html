@@ -47,11 +47,15 @@
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 24.7899116, lng: 120.9999046},
         zoom: 14,
+        mapTypeControl: false,
+        streetViewControl: false,
+        rotateControl: false
         //styles: [ /* ... */ ] // 這邊可加入客製style
         hideStyle: [{
           featureType: 'poi.business',
             stylers: [{
-               visibility: 'off'
+              visibility: 'off'
+
             }]
         }]
       });
